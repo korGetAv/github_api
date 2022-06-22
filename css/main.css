@@ -1,0 +1,128 @@
+/*=============== Section Header ====================================================================================================================================================================*/
+
+.header {
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  width: 100%;
+}
+
+.header__wrapper {
+  width: 100%;
+  padding: 10px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__input {
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  padding: 5px;
+  height: 30px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.header__button {
+  height: 30px;
+  padding: 0 20px;
+  text-transform: capitalize;
+  background-color: #ffcaca;
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.header__button:hover {
+  transform: scale(1.05);
+}
+
+.header__button:active {
+  transform: scale(1);
+}
+
+/*=============== /Section Header ====================================================================================================================================================================*/
+
+/*=============== Section Repository Owner ====================================================================================================================================================================*/
+
+.git-users {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.git-user {
+  flex: 1 1 30%;
+  max-width: 500px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #ffc4c4;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.git-user span,
+.git-user h2 {
+  color: #fff;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.git-user h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.git-user h2 img {
+  position: relative;
+  top: 9px;
+  left: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+.git-user h2 img._active {
+  transform: rotate(-180deg);
+}
+
+.git-user__image {
+  margin-bottom: 15px;
+}
+
+.git-user__image img {
+  width: 100%;
+  min-width: 200px;
+}
+
+.git-user__nav {
+  position: relative;
+}
+
+.git-user__repositories {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: 150px;
+  transition: all 0.2s ease 0s;
+}
+
+.git-user__repository a {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 100%;
+}
+
+/*=============== /Section Repository Owner ====================================================================================================================================================================*/
